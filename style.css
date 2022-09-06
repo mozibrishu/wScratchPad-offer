@@ -17,6 +17,17 @@ html {
   background-color: antiquewhite;
 }
 
+#elem {
+  top: 35px;
+  left: 50px;
+  height: 150px;
+  width: 200px;
+}
+
+#elem canvas{
+  /* background-image: url(images/darkGrayEd.png); */
+  transition: opacity 2s;
+}
 
 /* Utility */
 .absolute {
@@ -26,3 +37,4 @@ html {
 .hidden {
   display: none;
 }
+
