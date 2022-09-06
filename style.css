@@ -17,6 +17,17 @@ html {
   background-color: antiquewhite;
 }
 
+.barSmall{
+  top: 220px;
+  left: 70px;
+}
+
+.pointerSmall{
+  top: 220px;
+  left: 70px;
+  transition: all .2s;
+}
+
 #elem {
   top: 35px;
   left: 50px;
@@ -38,3 +49,20 @@ html {
   display: none;
 }
 
+.fadeOut-animation{
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  100%{opacity: 0;}
+}
+
+.elemIMG{
+  position: absolute;
+  width: 300px !important;
+  height: 250px !important;
+  /* top: -35px;
+  left: -50px; */
+  transform: translate(-50px,-35px) ;
+  transition: all 2s;
+}

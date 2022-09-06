@@ -1,5 +1,5 @@
 
-
+checker =1;
 $('#elem').wScratchPad({
     size        : 10,          // The size of the brush/scratch.
     bg          : 'images/offerMain.jpg',  // Background (image path or hex color).
@@ -14,7 +14,17 @@ $('#elem').wScratchPad({
 
   function scratchingMove(e, percent){
     console.log(percent);
-    if (percent>30) {
+    if (percent>40 && checker) {
+        checker = 0;
         document.querySelector('#elem canvas').style.opacity = '-.1';
+        document.querySelector('#elem').style.cursor = 'default';
+        // document.querySelector('#elem canvas').removeEventListener('mousedown',()=>{console.log('removed');});
+        
+        setTimeout(() => {
+            document.querySelector('#elem img').classList.add('elemIMG');
+            document.querySelector('#elem').addEventListener('click', ()=>{
+                console.log('clicked');
+            })
+        }, 1500);
     }
   }
