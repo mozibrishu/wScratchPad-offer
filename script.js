@@ -26,6 +26,7 @@ $('#elem').wScratchPad({
             document.querySelector('#elem img').classList.add('elemIMG');
             document.querySelector('.barSmall').classList.add('fadeOut-animation');
             document.querySelector('.pointerSmall').classList.add('fadeOut-animation');
+            document.querySelector('.offerText').classList.add('fadeOut-animation');
 
             // document.querySelector('#elem').addEventListener('click', ()=>{
             //     console.log('clicked');
