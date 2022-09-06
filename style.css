@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 300px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container{
+    width: 300px;
+    height: 250px;
+    background-color: antiquewhite;
+}
