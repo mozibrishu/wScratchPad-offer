@@ -1,17 +1,28 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body,html{
-    width: 300px;
-    height: 250px;
-    position: relative;
-    overflow: hidden;
+body,
+html {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
 }
 
-.container{
-    width: 300px;
-    height: 250px;
-    background-color: antiquewhite;
+.container {
+  width: 300px;
+  height: 250px;
+  background-color: antiquewhite;
+}
+
+
+/* Utility */
+.absolute {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
 }
