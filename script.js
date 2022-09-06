@@ -13,8 +13,10 @@ $('#elem').wScratchPad({
 
 
   function scratchingMove(e, percent){
-    console.log(percent);
-    if (percent>40 && checker) {
+    if(percent <= 36 ){console.log(percent);}
+    intPer = Math.floor(percent);
+    document.querySelector('.pointerSmall').style.transform = `translateX(${percent*2.5}px)`
+    if (percent>35 && checker) {
         checker = 0;
         document.querySelector('#elem canvas').style.opacity = '-.1';
         document.querySelector('#elem').style.cursor = 'default';
@@ -22,9 +24,12 @@ $('#elem').wScratchPad({
         
         setTimeout(() => {
             document.querySelector('#elem img').classList.add('elemIMG');
-            document.querySelector('#elem').addEventListener('click', ()=>{
-                console.log('clicked');
-            })
+            document.querySelector('.barSmall').classList.add('fadeOut-animation');
+            document.querySelector('.pointerSmall').classList.add('fadeOut-animation');
+
+            // document.querySelector('#elem').addEventListener('click', ()=>{
+            //     console.log('clicked');
+            // })
         }, 1500);
     }
   }
